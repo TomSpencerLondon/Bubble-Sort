@@ -3,6 +3,7 @@ package com.tomspencerlondon;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -13,9 +14,12 @@ public class SortTest {
   void sortTest() {
     assertThat(sort(List.of())
         .equals(List.of()));
+
+    assertThat(sort(List.of(1))
+        .equals(List.of(1)));
   }
 
   private List<Integer> sort(List<Integer> list) {
-    return null;
+    return list;
   }
 }
