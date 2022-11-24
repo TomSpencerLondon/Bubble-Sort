@@ -18,6 +18,7 @@ public class SortTest {
     assertThat(sort(asList(2, 1, 3))).isSorted();
     assertThat(sort(asList(1, 3, 2))).isSorted();
     assertThat(sort(asList(3, 2, 1))).isSorted();
+    assertThat(sort(asList(3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 8, 9, 7, 9, 9, 9))).isSorted();
   }
 
   private List<Integer> sort(List<Integer> list) {
