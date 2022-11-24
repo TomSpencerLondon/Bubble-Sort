@@ -11,12 +11,11 @@ public class SortTest {
   @Test
   void sortTest() {
     assertThat(sort(asList())).isSorted();
-
     assertThat(sort(asList(1))).isSorted();
-
     assertThat(sort(asList(1, 2))).isSorted();
-
     assertThat(sort(asList(2, 1))).isSorted();
+    assertThat(sort(asList(1, 2, 3))).isSorted();
+    assertThat(sort(asList(2, 1, 3))).isSorted();
   }
 
   private List<Integer> sort(List<Integer> list) {
